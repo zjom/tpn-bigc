@@ -1,0 +1,20 @@
+[project]
+name = "bigcommerce-client"
+version = "0.1.0"
+description = "Async BigCommerce API client with bounded parallelism and 429-aware rate limiting"
+requires-python = ">=3.10"
+dependencies = ["httpx>=0.27"]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-asyncio"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["bigcommerce_client"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+pythonpath = ["."]
