@@ -4,6 +4,10 @@ This repo contains `bigcommerce_client`, an async BigCommerce REST client. Use i
 read or write against a BigCommerce store. Don't write ad-hoc `requests`/`curl` loops: they
 ignore the store's rate limit and collect 429s.
 
+**Channel:** Unless otherwise specified, perform all actions on channel 1 (The Pharmacy Network)
+in BigCommerce. The store also has a separate BrushGo storefront channel; don't touch it unless
+asked.
+
 ## Setup
 
 ```bash
